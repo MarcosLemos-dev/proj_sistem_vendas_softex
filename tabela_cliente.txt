@@ -1,0 +1,14 @@
+CREATE TABLE `clientes` (
+  `CodigoDoCliente` varchar(5) NOT NULL,
+  `NomeDaEmpresa` varchar(40) NOT NULL,
+  `NomeDoContato` varchar(30) DEFAULT NULL,
+  `CargoDoContato` varchar(30) DEFAULT NULL,
+  `Endereco` varchar(60) DEFAULT NULL,
+  `Cidade` varchar(15) DEFAULT NULL,
+  `Regiao` varchar(15) DEFAULT NULL,
+  `CEP` varchar(10) DEFAULT NULL,
+  `Pais` varchar(15) DEFAULT NULL,
+  `Telefone` varchar(24) DEFAULT NULL,
+  `Fax` varchar(24) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+

@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "@types/express": "^4.17.19",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2",
+    "yarn": "^1.22.19"
+  },
+  "name": "projeto6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --transpile-only src/server.ts"
+  },
+  "repository": "https://github.com/MarcosLemos-dev/projeto6.git",
+  "author": "MarcosLemos-dev <dasilvalemosm@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.2"
+  }
+}
