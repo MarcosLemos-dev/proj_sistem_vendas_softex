@@ -37,8 +37,8 @@ const router = Router();
  router.delete('/deletarFornecedores/:id', FornecedoresController.deletarFornecedores);
 
 //esta parte é a rotas dos metodos CRUD para  tabela Categorias
-router.get('/listarCategorias', CategoriasController.cadastrarCategorias);
-router.post('/cadastrarCategorias', CategoriasController.buscarCategorias);
+router.get('/listarCategorias', CategoriasController.buscarCategorias);
+router.post('/cadastrarCategorias', CategoriasController.cadastrarCategorias);
 router.put('/alterarCategorias/:id', CategoriasController.alterarCategorias);
 router.delete('/deletarCategorias/:id', CategoriasController.deletarCategorias);
 
