@@ -4,7 +4,7 @@ import {
   Router,
 } from 'express';
 
-import ClientesController from './controller/ClientesController';
+import FornecedoresController from './controller/FornecedoresController';
 
 const router = Router();
 
@@ -29,8 +29,10 @@ const router = Router();
 
  router.post('/cadastrarServico', ServicoController.cadastrarServico);
 */
- //esta parte é a rotas dos metodos CRUD para  tabela clientes
- router.get('/listarClientes', ClientesController.buscarClientes);
- router.post('/cadastrarClientes', ClientesController.cadastrarClientes);
+ //esta parte é a rotas dos metodos CRUD para  tabela Fornecedores
+ router.get('/listarFornecedores', FornecedoresController.buscarFornecedores);
+ router.post('/cadastrarFornecedores', FornecedoresController.cadastrarFornecedores);
+ router.put('/alterarFornecedores/:id', FornecedoresController.alterarFornecedores);
+ router.delete('/deletarFornecedores/:id', FornecedoresController.deletarFornecedores);
 
 export { router };
