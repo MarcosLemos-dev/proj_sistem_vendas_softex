@@ -4,6 +4,7 @@ import {
   Router,
 } from 'express';
 
+import CategoriasController from './controller/CategoriasController';
 import FornecedoresController from './controller/FornecedoresController';
 
 const router = Router();
@@ -34,5 +35,11 @@ const router = Router();
  router.post('/cadastrarFornecedores', FornecedoresController.cadastrarFornecedores);
  router.put('/alterarFornecedores/:id', FornecedoresController.alterarFornecedores);
  router.delete('/deletarFornecedores/:id', FornecedoresController.deletarFornecedores);
+
+//esta parte é a rotas dos metodos CRUD para  tabela Categorias
+router.get('/listarCategorias', CategoriasController.cadastrarCategorias);
+router.post('/cadastrarCategorias', CategoriasController.buscarCategorias);
+router.put('/alterarCategorias/:id', CategoriasController.alterarCategorias);
+router.delete('/deletarCategorias/:id', CategoriasController.deletarCategorias);
 
 export { router };

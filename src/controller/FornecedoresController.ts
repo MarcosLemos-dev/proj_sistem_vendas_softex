@@ -16,7 +16,7 @@ import { conexao } from '../bd/conexao';
   
   */
   
-  class clientesController{
+  class FornecedoresController{
   
   
       public buscarFornecedores(req: Request, res: Response){
@@ -74,4 +74,4 @@ import { conexao } from '../bd/conexao';
       
   }
   
-  export default new clientesController();
+  export default new FornecedoresController();
